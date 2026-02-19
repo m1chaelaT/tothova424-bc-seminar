@@ -1,9 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="sk">
 <head>
-  <title>My GitHub Pages site</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bakalárska práca – Meno Priezvisko</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+}
+
+/* Horná lišta */
+.topbar {
+    background-color: #002b5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.topbar img {
+    height: 50px;
+}
+
+.topbar .name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu */
+.navbar {
+    background-color: #004080;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #0066cc;
+}
+
+/* Sekcie */
+.container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #002b5c;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 8px;
+}
+
+/* Denník */
+.entry {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f0f4ff;
+    border-left: 5px solid #004080;
+    border-radius: 6px;
+}
+
+.entry-date {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Odkazy */
+a {
+    color: #004080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responzívnosť */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello world</h1>
+
+<!-- Horná lišta -->
+<div class="topbar">
+    <div class="name">Meno Priezvisko</div>
+    <img src="logo_fakulty.png" alt="Logo fakulty">
+</div>
+
+<!-- Menu -->
+<div class="navbar">
+    <a href="#student">O práci</a>
+    <a href="#zadanie">Zadanie</a>
+    <a href="#zdroje">Zdroje</a>
+    <a href="#materialy">Materiály</a>
+    <a href="#dennik">Denník</a>
+</div>
+
+<div class="container">
+
+    <!-- O práci -->
+    <div class="section" id="student">
+        <h2>Základné informácie</h2>
+        <p><strong>Meno:</strong> Meno Priezvisko</p>
+        <p><strong>Názov práce:</strong> Názov bakalárskej práce</p>
+        <p><strong>Školiteľ:</strong> Meno školiteľa</p>
+        <p><strong>Kontakt:</strong> email@uniba.sk</p>
+    </div>
+
+    <!-- Zadanie -->
+    <div class="section" id="zadanie">
+        <h2>Zadanie práce</h2>
+        <p><strong>Anotácia:</strong><br>
+        Sem vlož anotáciu zo zadania v AISe.</p>
+
+        <p><strong>Cieľ práce:</strong><br>
+        Sem vlož cieľ práce zo zadania.</p>
+    </div>
+
+    <!-- Zdroje -->
+    <div class="section" id="zdroje">
+        <h2>Zoznam zdrojov</h2>
+        <ul>
+            <li><a href="#">Názov článku alebo knihy</a></li>
+            <li><a href="#">Technická dokumentácia</a></li>
+            <li><a href="#">Východisková záverečná práca</a></li>
+        </ul>
+    </div>
+
+    <!-- Materiály -->
+    <div class="section" id="materialy">
+        <h2>Texty, screenshoty, zdrojové kódy</h2>
+        <p><a href="#">Aktuálna verzia textu práce (PDF)</a></p>
+        <p><a href="#">GitHub repozitár</a></p>
+        <p><a href="#">Ukážky screenshotov</a></p>
+    </div>
+
+    <!-- Denník -->
+    <div class="section" id="dennik">
+        <h2>Týždenný denník</h2>
+
+        <div class="entry">
+            <div class="entry-date">1. týždeň</div>
+            <p>Popis vykonanej práce počas týždňa.</p>
+        </div>
+
+        <div class="entry">
+            <div class="entry-date">2. týždeň</div>
+            <p>Popis vykonanej práce počas týždňa.</p>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
